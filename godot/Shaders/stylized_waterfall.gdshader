@@ -35,6 +35,7 @@ uniform sampler2D depth_color_curve;
 // ANCHOR: depth_foam_offset
 uniform float depth_foam_offset= 0.25;
 // END: depth_foam_offset
+uniform sampler2D DEPTH_TEXTURE : hint_depth_texture;
 // debug uniforms!
 // we can use these uniform to peek behind the scenes
 // most of the heavy lifting in this effect is done by

@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://crlujh7fnsvgs"]
 
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://ca3nxv23e3o27" path="res://Demos/ImpossibleCube/ImpossibleCubeBase.tscn" id="2"]
-[ext_resource type="Shader" path="res://Shaders/pointilism.gdshader" id="3"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="4"]
-[ext_resource type="PackedScene" path="res://Shared/Demo3DEnvironment.tscn" id="5"]
+[ext_resource type="Shader" uid="uid://tennslhbnyxt" path="res://Shaders/pointilism.gdshader" id="3"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://dquhei2qv5csj" path="res://Shared/Demo3DEnvironment.tscn" id="5"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("3")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://g8f67e4t4v2u"]
 
-[ext_resource type="Script" path="res://Demos/Blur/Ship.gd" id="1"]
+[ext_resource type="Script" uid="uid://cvgofxi0o0ldy" path="res://Demos/Blur/Ship.gd" id="1"]
 [ext_resource type="Environment" path="res://Shared/environments/2d_level_environment.tres" id="4"]
 
 [sub_resource type="Gradient" id="1"]

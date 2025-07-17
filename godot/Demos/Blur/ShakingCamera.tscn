@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dkvt3w3hayp4j"]
 
-[ext_resource type="Script" path="res://Demos/Blur/ShakingCamera.gd" id="1"]
+[ext_resource type="Script" uid="uid://1s0monofo5j7" path="res://Demos/Blur/ShakingCamera.gd" id="1"]
 
 [node name="ShakingCamera" type="Camera2D"]
 position_smoothing_enabled = true

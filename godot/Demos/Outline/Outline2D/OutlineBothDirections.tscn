@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbmtm1ybyxbvk"]
 
-[ext_resource type="Script" path="res://Demos/Outline/Outline2D/Outline.gd" id="1"]
-[ext_resource type="Shader" path="res://Shaders/outline2D_inner_outer.gdshader" id="2"]
+[ext_resource type="Script" uid="uid://citfwrdhw30f7" path="res://Demos/Outline/Outline2D/Outline.gd" id="1"]
+[ext_resource type="Shader" uid="uid://bbtj47gmkc6xm" path="res://Shaders/outline2D_inner_outer.gdshader" id="2"]
 [ext_resource type="Texture2D" uid="uid://7giw201cbixu" path="res://Shared/sprites/robi_shaded.png" id="2_81g5i"]
 
 [sub_resource type="ShaderMaterial" id="1"]

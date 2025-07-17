@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://cardfqb2rrmre"]
 
-[ext_resource type="PackedScene" path="res://Shared/models/rat_model/rat.tscn" id="10"]
-[ext_resource type="Shader" path="res://Shaders/matcap.gdshader" id="12"]
+[ext_resource type="PackedScene" uid="uid://bvkjw7s6ugwb" path="res://Shared/models/rat_model/rat.tscn" id="10"]
+[ext_resource type="Shader" uid="uid://xvj868andhf6" path="res://Shaders/matcap.gdshader" id="12"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 render_priority = 0

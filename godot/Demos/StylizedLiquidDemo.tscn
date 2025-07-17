@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://n87x06o26w4p" path="res://Shared/Demo3DEnvironmentDark.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bco47y45kysaw" path="res://Demos/StylizedLiquid/PotionLarge.tscn" id="2"]
-[ext_resource type="Shader" path="res://Shaders/stylized_liquid.gdshader" id="3"]
+[ext_resource type="Shader" uid="uid://cynxattikdv7e" path="res://Shaders/stylized_liquid.gdshader" id="3"]
 [ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="4"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="5"]
-[ext_resource type="Script" path="res://Demos/StylizedLiquid/LiquidWobble.gd" id="5_guj11"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="5"]
+[ext_resource type="Script" uid="uid://chdk1ysb4a3hw" path="res://Demos/StylizedLiquid/LiquidWobble.gd" id="5_guj11"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2er3"]
 transparency = 1
@@ -29,12 +29,12 @@ render_priority = 0
 shader = ExtResource("3")
 shader_parameter/liquid_height = 0.17
 shader_parameter/liquid_surface_color = Color(0.439216, 1, 0.156863, 1)
+shader_parameter/liquid_rim_gradient = SubResource("GradientTexture1D_1leg4")
 shader_parameter/rim_emission_intensity = 1.031
 shader_parameter/rim_exponent = 3.0
 shader_parameter/emission_intensity = 0.438
 shader_parameter/liquid_surface_gradient_size = 0.02
 shader_parameter/wobble = Vector2(0.00230302, 0.00253308)
-shader_parameter/liquid_rim_gradient = SubResource("GradientTexture1D_1leg4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pjqlo"]
 transparency = 1
@@ -59,12 +59,12 @@ render_priority = 0
 shader = ExtResource("3")
 shader_parameter/liquid_height = 0.0
 shader_parameter/liquid_surface_color = Color(1, 0.266667, 0.505882, 1)
+shader_parameter/liquid_rim_gradient = SubResource("GradientTexture1D_mcxb7")
 shader_parameter/rim_emission_intensity = 1.031
 shader_parameter/rim_exponent = 3.0
 shader_parameter/emission_intensity = 0.438
 shader_parameter/liquid_surface_gradient_size = 0.174
 shader_parameter/wobble = Vector2(0, 0)
-shader_parameter/liquid_rim_gradient = SubResource("GradientTexture1D_mcxb7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gc6tk"]
 transparency = 1
@@ -88,12 +88,12 @@ render_priority = 0
 shader = ExtResource("3")
 shader_parameter/liquid_height = 0.139
 shader_parameter/liquid_surface_color = Color(0.396078, 0.905882, 0.988235, 1)
+shader_parameter/liquid_rim_gradient = SubResource("GradientTexture1D_lvpoc")
 shader_parameter/rim_emission_intensity = 1.031
 shader_parameter/rim_exponent = 3.0
 shader_parameter/emission_intensity = 0.438
 shader_parameter/liquid_surface_gradient_size = 0.02
 shader_parameter/wobble = Vector2(0, 0)
-shader_parameter/liquid_rim_gradient = SubResource("GradientTexture1D_lvpoc")
 
 [sub_resource type="Animation" id="Animation_b5pxi"]
 resource_name = "show_potions"
@@ -237,7 +237,7 @@ tracks/11/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_h3s76"]
 _data = {
-"show_potions": SubResource("Animation_b5pxi")
+&"show_potions": SubResource("Animation_b5pxi")
 }
 
 [node name="StylizedLiquidDemo" type="CanvasLayer"]

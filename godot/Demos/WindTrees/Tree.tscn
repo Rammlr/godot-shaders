@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://dndc23224vy53"]
 
 [ext_resource type="PackedScene" uid="uid://b5gqkcwqdpbhb" path="res://Demos/WindTrees/Models/Tree.glb" id="1"]
-[ext_resource type="Shader" path="res://Demos/WindTrees/foliage_wind_tree_trunk.gdshader" id="8"]
-[ext_resource type="Shader" path="res://Demos/WindTrees/foliage_wind_tree_leaves.gdshader" id="9"]
+[ext_resource type="Shader" uid="uid://jyl1pr2csosj" path="res://Demos/WindTrees/foliage_wind_tree_trunk.gdshader" id="8"]
+[ext_resource type="Shader" uid="uid://c3oq7gl3sv2w1" path="res://Demos/WindTrees/foliage_wind_tree_leaves.gdshader" id="9"]
 
 [sub_resource type="FastNoiseLite" id="5"]
 fractal_octaves = 1

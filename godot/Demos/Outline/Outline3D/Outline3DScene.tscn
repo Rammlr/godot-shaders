@@ -1,10 +1,10 @@
 [gd_scene load_steps=22 format=3 uid="uid://buf5buk4m1noy"]
 
-[ext_resource type="Shader" path="res://Shaders/outline3D_smooth_normals_color.gdshader" id="1"]
-[ext_resource type="Script" path="res://Demos/Outline/Outline3D/SmoothNormalsMeshInstance.gd" id="2"]
-[ext_resource type="Shader" path="res://Shaders/outline3D.gdshader" id="3"]
-[ext_resource type="Script" path="res://Demos/Outline/Outline3D/CameraMouseHover.gd" id="4"]
-[ext_resource type="Script" path="res://Demos/Outline/Outline3D/OutlinePopArea.gd" id="5"]
+[ext_resource type="Shader" uid="uid://couxy1vqoh4ew" path="res://Shaders/outline3D_smooth_normals_color.gdshader" id="1"]
+[ext_resource type="Script" uid="uid://osagpi32ye2v" path="res://Demos/Outline/Outline3D/SmoothNormalsMeshInstance.gd" id="2"]
+[ext_resource type="Shader" uid="uid://cjlf5iu7qsnxu" path="res://Shaders/outline3D.gdshader" id="3"]
+[ext_resource type="Script" uid="uid://bmit1j4sf00b4" path="res://Demos/Outline/Outline3D/CameraMouseHover.gd" id="4"]
+[ext_resource type="Script" uid="uid://dpoxpuc73na7e" path="res://Demos/Outline/Outline3D/OutlinePopArea.gd" id="5"]
 
 [sub_resource type="BoxMesh" id="1"]
 

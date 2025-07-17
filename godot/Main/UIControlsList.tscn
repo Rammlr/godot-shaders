@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dd7qh25r60ptt"]
 
-[ext_resource type="Theme" path="res://Main/UI/ui_theme.tres" id="1"]
+[ext_resource type="Theme" uid="uid://b2rktjpfj58fv" path="res://Main/UI/ui_theme.tres" id="1"]
 [ext_resource type="StyleBox" path="res://Main/keyboard_key_panel.tres" id="2"]
 [ext_resource type="FontFile" path="res://Main/UI/fonts/SubtitleFont.tres" id="3"]
-[ext_resource type="Script" path="res://Main/UIControlsList.gd" id="4"]
+[ext_resource type="Script" uid="uid://djlx4rqh87oeu" path="res://Main/UIControlsList.gd" id="4"]
 
 [node name="UIControlsList" type="HBoxContainer"]
 offset_left = 32.0

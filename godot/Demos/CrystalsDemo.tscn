@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cys1t6gtdcrvi" path="res://Demos/Crystals/Crystal_Emission.png" id="5_axjqt"]
 [ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="6"]
 [ext_resource type="Texture2D" uid="uid://qiewxcg1l806" path="res://Demos/Crystals/Crystal_Normal.png" id="6_1acp2"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
-[ext_resource type="Shader" path="res://Shaders/fresnel_crystal.gdshader" id="8"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
+[ext_resource type="Shader" uid="uid://cruocmj7v025a" path="res://Shaders/fresnel_crystal.gdshader" id="8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2753f"]
 render_priority = 0
@@ -18,8 +18,8 @@ shader_parameter/texture_albedo = ExtResource("4_kkods")
 shader_parameter/texture_normal = ExtResource("6_1acp2")
 shader_parameter/emission = Color(1, 0.6, 0.1, 1)
 shader_parameter/emission_energy = 6.0
-shader_parameter/emission_pulse_speed = 0.75
 shader_parameter/texture_emission = ExtResource("5_axjqt")
+shader_parameter/emission_pulse_speed = 0.75
 shader_parameter/fresnel_color = Color(0, 0.9, 0.9, 1)
 shader_parameter/fresnel_color_intensity = 1.5
 shader_parameter/fresnel_power = 6.0
@@ -59,8 +59,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l2111"]
 _data = {
-"RESET": SubResource("3"),
-"Rotate": SubResource("4")
+&"RESET": SubResource("3"),
+&"Rotate": SubResource("4")
 }
 
 [node name="CrystalDemo" type="CanvasLayer"]

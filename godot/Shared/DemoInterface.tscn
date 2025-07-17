@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://diofpwcvq5elu"]
 
 [ext_resource type="Theme" path="res://Shared/theme/gdquest.theme" id="1"]
-[ext_resource type="Script" path="res://Shared/DemoInterface.gd" id="2"]
+[ext_resource type="Script" uid="uid://bxusctsoppl43" path="res://Shared/DemoInterface.gd" id="2"]
 [ext_resource type="FontFile" path="res://Shared/theme/fonts/default_font_bold.tres" id="3"]
 
 [node name="DemoInterface" type="PanelContainer"]

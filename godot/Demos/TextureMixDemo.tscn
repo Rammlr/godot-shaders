@@ -9,14 +9,19 @@
 [ext_resource type="Texture2D" uid="uid://m1m8w0a5l2li" path="res://Demos/TextureMix/textures/lambert2_normal.jpg" id="7_32ogr"]
 [ext_resource type="PackedScene" uid="uid://dn7g2sa1f3j3n" path="res://Demos/TextureMix/scene.glb" id="8"]
 [ext_resource type="Texture2D" uid="uid://dpjngtoswnty5" path="res://Demos/TextureMix/textures/Moss003_1K_Color.jpg" id="8_tgyyl"]
-[ext_resource type="Shader" path="res://Shaders/texture_mix.gdshader" id="9"]
+[ext_resource type="Shader" uid="uid://cxajhfdd4kmvi" path="res://Shaders/texture_mix.gdshader" id="9"]
 [ext_resource type="Texture2D" uid="uid://dpqhhrxbnxiga" path="res://Demos/TextureMix/textures/Moss003_1K_Normal.jpg" id="9_s0g36"]
-[ext_resource type="Script" path="res://Demos/TextureMix/TextureMixDemo.gd" id="12"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="13"]
+[ext_resource type="Script" uid="uid://dei5eg3wp0bg3" path="res://Demos/TextureMix/TextureMixDemo.gd" id="12"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="13"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7e6og"]
 render_priority = 0
 shader = ExtResource("9")
+shader_parameter/tex_1_albedo = ExtResource("5_aldb3")
+shader_parameter/tex_1_ao = ExtResource("6_i1xyj")
+shader_parameter/tex_1_normal = ExtResource("7_32ogr")
+shader_parameter/tex_2_albedo = ExtResource("8_tgyyl")
+shader_parameter/tex_2_normal = ExtResource("9_s0g36")
 shader_parameter/blend_smoothness = 0.2
 shader_parameter/threshold = 0.0
 shader_parameter/additive_mix = false
@@ -24,15 +29,15 @@ shader_parameter/use_red_vertex_color = true
 shader_parameter/use_ao_occlusion = false
 shader_parameter/use_world_direction = false
 shader_parameter/world_direction = Vector3(0, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_awrai"]
+render_priority = 0
+shader = ExtResource("9")
 shader_parameter/tex_1_albedo = ExtResource("5_aldb3")
 shader_parameter/tex_1_ao = ExtResource("6_i1xyj")
 shader_parameter/tex_1_normal = ExtResource("7_32ogr")
 shader_parameter/tex_2_albedo = ExtResource("8_tgyyl")
 shader_parameter/tex_2_normal = ExtResource("9_s0g36")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_awrai"]
-render_priority = 0
-shader = ExtResource("9")
 shader_parameter/blend_smoothness = 0.2
 shader_parameter/threshold = 0.0
 shader_parameter/additive_mix = false
@@ -40,15 +45,15 @@ shader_parameter/use_red_vertex_color = false
 shader_parameter/use_ao_occlusion = true
 shader_parameter/use_world_direction = false
 shader_parameter/world_direction = Vector3(0, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5a6av"]
+render_priority = 0
+shader = ExtResource("9")
 shader_parameter/tex_1_albedo = ExtResource("5_aldb3")
 shader_parameter/tex_1_ao = ExtResource("6_i1xyj")
 shader_parameter/tex_1_normal = ExtResource("7_32ogr")
 shader_parameter/tex_2_albedo = ExtResource("8_tgyyl")
 shader_parameter/tex_2_normal = ExtResource("9_s0g36")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_5a6av"]
-render_priority = 0
-shader = ExtResource("9")
 shader_parameter/blend_smoothness = 0.2
 shader_parameter/threshold = 0.0
 shader_parameter/additive_mix = false
@@ -56,11 +61,6 @@ shader_parameter/use_red_vertex_color = false
 shader_parameter/use_ao_occlusion = false
 shader_parameter/use_world_direction = true
 shader_parameter/world_direction = Vector3(0, 1, 0)
-shader_parameter/tex_1_albedo = ExtResource("5_aldb3")
-shader_parameter/tex_1_ao = ExtResource("6_i1xyj")
-shader_parameter/tex_1_normal = ExtResource("7_32ogr")
-shader_parameter/tex_2_albedo = ExtResource("8_tgyyl")
-shader_parameter/tex_2_normal = ExtResource("9_s0g36")
 
 [sub_resource type="Animation" id="4"]
 length = 11.0
@@ -158,7 +158,7 @@ tracks/7/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vd51s"]
 _data = {
-"show-mix": SubResource("4")
+&"show-mix": SubResource("4")
 }
 
 [node name="TextureMixDemo" type="CanvasLayer"]

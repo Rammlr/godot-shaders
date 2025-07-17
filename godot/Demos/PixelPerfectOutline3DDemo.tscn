@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://bboovta3fk7dd"]
 
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://dpp7narpdag6n" path="res://Shared/models/rat_model/rat.dae" id="2"]
-[ext_resource type="Shader" path="res://Shaders/pixel_perfect_outline3D.gdshader" id="3"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="4"]
+[ext_resource type="Shader" uid="uid://b0f7tibvh7fks" path="res://Shaders/pixel_perfect_outline3D.gdshader" id="3"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="4"]
 
 [sub_resource type="ShaderMaterial" id="2"]
 render_priority = 0

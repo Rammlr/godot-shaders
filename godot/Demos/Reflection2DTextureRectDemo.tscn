@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://bly1goqj5isle"]
 
-[ext_resource type="Script" path="res://Demos/Reflection2D/Reflection2DTextureRect.gd" id="1"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="2"]
-[ext_resource type="PackedScene" path="res://Shared/Background2D/Demo2DBackground.tscn" id="4"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="7"]
+[ext_resource type="Script" uid="uid://b3drghssxdlpr" path="res://Demos/Reflection2D/Reflection2DTextureRect.gd" id="1"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://7mqdkojagyav" path="res://Shared/Background2D/Demo2DBackground.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="7"]
 
 [sub_resource type="Shader" id="1"]
 code = "shader_type canvas_item;

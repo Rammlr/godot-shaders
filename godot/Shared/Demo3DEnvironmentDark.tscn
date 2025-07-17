@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://n87x06o26w4p"]
 
-[ext_resource type="Environment" path="res://Shared/environments/level_environment_dark.tres" id="1"]
+[ext_resource type="Environment" uid="uid://ctef6o8gbkc7x" path="res://Shared/environments/level_environment_dark.tres" id="1"]
 [ext_resource type="PackedScene" uid="uid://dquhei2qv5csj" path="res://Shared/Demo3DEnvironment.tscn" id="2"]
 
 [sub_resource type="StandardMaterial3D" id="1"]

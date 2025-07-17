@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://b2jsb4wqmuk1t"]
 
-[ext_resource type="Shader" path="res://Demos/WaterSidescroll2D/water_sidescroll_2D_full.gdshader" id="1"]
-[ext_resource type="Script" path="res://Demos/WaterSidescroll2D/WaterSidescroll2D.gd" id="2"]
-[ext_resource type="Shader" path="res://Demos/WaterSidescroll2D/water_sidescroll_2D_simple.gdshader" id="3"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="6"]
-[ext_resource type="PackedScene" path="res://Shared/Background2D/Demo2DBackground.tscn" id="8"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="10"]
+[ext_resource type="Shader" uid="uid://dixevjyo8y0jq" path="res://Demos/WaterSidescroll2D/water_sidescroll_2D_full.gdshader" id="1"]
+[ext_resource type="Script" uid="uid://6lx2h2sih72" path="res://Demos/WaterSidescroll2D/WaterSidescroll2D.gd" id="2"]
+[ext_resource type="Shader" uid="uid://bs7gxfifkitgt" path="res://Demos/WaterSidescroll2D/water_sidescroll_2D_simple.gdshader" id="3"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://7mqdkojagyav" path="res://Shared/Background2D/Demo2DBackground.tscn" id="8"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="10"]
 
 [sub_resource type="ShaderMaterial" id="3"]
 shader = ExtResource("1")

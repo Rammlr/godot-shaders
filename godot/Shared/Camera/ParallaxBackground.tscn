@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bfa5ti6ns02be"]
 
-[ext_resource type="Shader" path="res://Shared/Background2D/gaussian_blur_lod_15_samples.gdshader" id="3"]
+[ext_resource type="Shader" uid="uid://kqmhc37gn3ld" path="res://Shared/Background2D/gaussian_blur_lod_15_samples.gdshader" id="3"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("3")

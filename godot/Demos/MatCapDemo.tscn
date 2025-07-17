@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://ctgrhpey5dygb"]
 
 [ext_resource type="PackedScene" uid="uid://cardfqb2rrmre" path="res://Demos/MatCap/MatCapScene.tscn" id="1"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="2"]
-[ext_resource type="PackedScene" path="res://Shared/Demo3DEnvironment.tscn" id="3"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="4"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dquhei2qv5csj" path="res://Shared/Demo3DEnvironment.tscn" id="3"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="4"]
 
 [node name="MatCapDemo" type="CanvasLayer"]
 script = ExtResource("4")

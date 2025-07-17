@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://qhkjtcc72olb"]
 
-[ext_resource type="Shader" path="res://Shaders/PalettSwap2D.gdshader" id="1"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="2"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="5"]
-[ext_resource type="PackedScene" path="res://Shared/Background2D/Demo2DBackground.tscn" id="6"]
-[ext_resource type="Script" path="res://Demos/PaletteSwap2D/PaletteSwapSprite.gd" id="7"]
+[ext_resource type="Shader" uid="uid://dpq1iy6euf7cb" path="res://Shaders/PalettSwap2D.gdshader" id="1"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://7mqdkojagyav" path="res://Shared/Background2D/Demo2DBackground.tscn" id="6"]
+[ext_resource type="Script" uid="uid://sxlan8goy84x" path="res://Demos/PaletteSwap2D/PaletteSwapSprite.gd" id="7"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("1")

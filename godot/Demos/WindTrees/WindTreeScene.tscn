@@ -4,7 +4,7 @@
 [ext_resource type="Material" path="res://Demos/WindTrees/FolliageWindTreeTrunkMaterial.tres" id="2"]
 [ext_resource type="Material" path="res://Demos/WindTrees/FolliageWindGrassMaterial.tres" id="3"]
 [ext_resource type="Material" path="res://Demos/WindTrees/FolliageWindTreeLeavesMaterial.tres" id="4"]
-[ext_resource type="Script" path="res://Demos/WindTrees/WindControl.gd" id="5"]
+[ext_resource type="Script" uid="uid://db6wg08gclydc" path="res://Demos/WindTrees/WindControl.gd" id="5"]
 [ext_resource type="ArrayMesh" uid="uid://dbaiqvr3jwcst" path="res://Demos/WindTrees/Models/grass_clump.mesh" id="6"]
 [ext_resource type="Theme" path="res://Shared/theme/gdquest.theme" id="11"]
 [ext_resource type="ArrayMesh" uid="uid://bylmuengfvc88" path="res://Demos/WindTrees/Models/terrain.obj" id="13"]

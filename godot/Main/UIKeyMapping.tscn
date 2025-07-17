@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://f21qa7uxrxu1"]
 
 [ext_resource type="FontFile" path="res://Main/UI/fonts/SmallFont.tres" id="1"]
-[ext_resource type="Script" path="res://Main/UIKeyMapping.gd" id="2"]
+[ext_resource type="Script" uid="uid://brp8bcragsl7o" path="res://Main/UIKeyMapping.gd" id="2"]
 
 [node name="UIKeyMapping" type="HBoxContainer"]
 offset_right = 162.0

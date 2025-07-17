@@ -1,10 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://drpfx2dgdyhms"]
 
-[ext_resource path="res://Shared/Camera3D/MouseCamera2D.gd" type="Script" id=1]
-
-
-
+[sub_resource type="Resource" id="Resource_tj86b"]
+metadata/__load_path__ = "res://Shared/Camera3D/MouseCamera2D.gd"
 
 [node name="MouseCamera2D" type="Camera2D"]
 current = true
-script = ExtResource( 1 )
+script = SubResource("Resource_tj86b")

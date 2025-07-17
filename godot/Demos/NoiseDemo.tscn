@@ -1,13 +1,13 @@
 [gd_scene load_steps=18 format=3 uid="uid://j4aa5qjcj4vh"]
 
-[ext_resource type="Shader" path="res://Shaders/random_noise.gdshader" id="1"]
-[ext_resource type="Shader" path="res://Shaders/value_noise.gdshader" id="2"]
-[ext_resource type="Shader" path="res://Shaders/perlin_noise.gdshader" id="3"]
-[ext_resource type="Shader" path="res://Shaders/voronoi_noise.gdshader" id="4"]
+[ext_resource type="Shader" uid="uid://b8eqf17bktwkh" path="res://Shaders/random_noise.gdshader" id="1"]
+[ext_resource type="Shader" uid="uid://bdww07y1t2jqs" path="res://Shaders/value_noise.gdshader" id="2"]
+[ext_resource type="Shader" uid="uid://cwuutt2myblwl" path="res://Shaders/perlin_noise.gdshader" id="3"]
+[ext_resource type="Shader" uid="uid://brdcdwo3frhrd" path="res://Shaders/voronoi_noise.gdshader" id="4"]
 [ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="5"]
-[ext_resource type="Shader" path="res://Shaders/value_noise_layered.gdshader" id="5_rxcmu"]
+[ext_resource type="Shader" uid="uid://bjaq1o6vcy73e" path="res://Shaders/value_noise_layered.gdshader" id="5_rxcmu"]
 [ext_resource type="PackedScene" uid="uid://7mqdkojagyav" path="res://Shared/Background2D/Demo2DBackground.tscn" id="6"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("1")

@@ -1,25 +1,25 @@
 [gd_scene load_steps=27 format=3 uid="uid://bes6p8ab5545"]
 
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
 [ext_resource type="Gradient" path="res://Demos/Dissolve/Dissolve2D/color_ramp.tres" id="2"]
-[ext_resource type="Script" path="res://Utils/DebugViewer.gd" id="4"]
-[ext_resource type="Shader" path="res://Shaders/dissolve2D.gdshader" id="6"]
-[ext_resource type="Script" path="res://Demos/Dissolve/Dissolve2D/DissolveMaskController.gd" id="7"]
-[ext_resource type="Script" path="res://Demos/Dissolve/Dissolve2D/DissolveController.gd" id="8"]
-[ext_resource type="PackedScene" path="res://Shared/Background2D/Demo2DBackground.tscn" id="11"]
-[ext_resource type="Shader" path="res://Shaders/dissolve2D_mask.gdshader" id="12"]
+[ext_resource type="Script" uid="uid://b2qw1w46ra52a" path="res://Utils/DebugViewer.gd" id="4"]
+[ext_resource type="Shader" uid="uid://2i03ak6kngn0" path="res://Shaders/dissolve2D.gdshader" id="6"]
+[ext_resource type="Script" uid="uid://b6k2admkwd30j" path="res://Demos/Dissolve/Dissolve2D/DissolveMaskController.gd" id="7"]
+[ext_resource type="Script" uid="uid://yfrtfcob7ntu" path="res://Demos/Dissolve/Dissolve2D/DissolveController.gd" id="8"]
+[ext_resource type="PackedScene" uid="uid://7mqdkojagyav" path="res://Shared/Background2D/Demo2DBackground.tscn" id="11"]
+[ext_resource type="Shader" uid="uid://kac3yx6pj1pt" path="res://Shaders/dissolve2D_mask.gdshader" id="12"]
 [ext_resource type="Texture2D" path="res://Demos/Dissolve/noise_tex.tres" id="13"]
-[ext_resource type="Script" path="res://Demos/Dissolve/Dissolve2D/Dissolve2DControls.gd" id="14"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="15"]
-[ext_resource type="Script" path="res://Demos/Dissolve/Dissolve2D/Particles2D.gd" id="16"]
+[ext_resource type="Script" uid="uid://cmcuifqffnga5" path="res://Demos/Dissolve/Dissolve2D/Dissolve2DControls.gd" id="14"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="15"]
+[ext_resource type="Script" uid="uid://cjca31h54hgd" path="res://Demos/Dissolve/Dissolve2D/Particles2D.gd" id="16"]
 
 [sub_resource type="ShaderMaterial" id="3"]
 shader = ExtResource("6")
+shader_parameter/dissolve_texture = ExtResource("13")
 shader_parameter/burn_color = Color(2.73725, 0.0784314, 0.329412, 1)
 shader_parameter/burn_size = 0.15
 shader_parameter/dissolve_amount = 0.0
 shader_parameter/emission_amount = 0.5
-shader_parameter/dissolve_texture = ExtResource("13")
 
 [sub_resource type="Animation" id="15"]
 resource_name = "Dissolve"
@@ -81,9 +81,9 @@ viewport_path = NodePath("MaskView/SubViewport")
 
 [sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("12")
+shader_parameter/dissolve_texture = ExtResource("13")
 shader_parameter/burn_size = 0.15
 shader_parameter/dissolve_amount = 0.0
-shader_parameter/dissolve_texture = ExtResource("13")
 
 [sub_resource type="Animation" id="13"]
 resource_name = "Dissolve"

@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bjmid3jo8m8n1" path="res://Main/DemoPickerUI.tscn" id="1"]
 [ext_resource type="Theme" uid="uid://b2rktjpfj58fv" path="res://Main/UI/ui_theme.tres" id="2"]
-[ext_resource type="Script" path="res://Main/DemoPlayer.gd" id="5"]
-[ext_resource type="Script" path="res://Main/DemoSelector.gd" id="6"]
+[ext_resource type="Script" uid="uid://cin1ua6epejjk" path="res://Main/DemoPlayer.gd" id="5"]
+[ext_resource type="Script" uid="uid://c0sk55eyf8l6x" path="res://Main/DemoSelector.gd" id="6"]
 
 [sub_resource type="StyleBoxFlat" id="3"]
 bg_color = Color(0, 0, 0, 0)
@@ -32,10 +32,6 @@ script = ExtResource("6")
 script = ExtResource("5")
 
 [node name="DemoPickerUI" parent="." instance=ExtResource("1")]
-layout_mode = 3
-anchors_preset = 15
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 100

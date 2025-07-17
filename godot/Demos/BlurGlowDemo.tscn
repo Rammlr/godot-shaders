@@ -1,13 +1,13 @@
 [gd_scene load_steps=16 format=3 uid="uid://ci11oo63dcfuh"]
 
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://dnei3uy5bhpha" path="res://Demos/Glow2D/BlurGlow/Scene.tscn" id="2"]
-[ext_resource type="Shader" path="res://Shaders/gaussian_blur.gdshader" id="3"]
-[ext_resource type="Shader" path="res://Shaders/compose.gdshader" id="4"]
-[ext_resource type="Shader" path="res://Shaders/glow_prepass.gdshader" id="5"]
+[ext_resource type="Shader" uid="uid://b5fnl035dhghc" path="res://Shaders/gaussian_blur.gdshader" id="3"]
+[ext_resource type="Shader" uid="uid://bpc51xdk8nd8q" path="res://Shaders/compose.gdshader" id="4"]
+[ext_resource type="Shader" uid="uid://fe8kqsuwvtqn" path="res://Shaders/glow_prepass.gdshader" id="5"]
 [ext_resource type="Texture2D" uid="uid://7giw201cbixu" path="res://Shared/sprites/robi_shaded.png" id="5_bxej1"]
 [ext_resource type="PackedScene" uid="uid://7mqdkojagyav" path="res://Shared/Background2D/Demo2DBackground.tscn" id="7"]
-[ext_resource type="Script" path="res://Utils/DebugViewer.gd" id="8"]
+[ext_resource type="Script" uid="uid://b2qw1w46ra52a" path="res://Utils/DebugViewer.gd" id="8"]
 [ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="9"]
 
 [sub_resource type="ShaderMaterial" id="1"]
@@ -31,9 +31,9 @@ viewport_path = NodePath("MaskView/SubViewport/Blur2/SubViewport/Blur1/SubViewpo
 [sub_resource type="ShaderMaterial" id="6"]
 resource_local_to_scene = true
 shader = ExtResource("4")
-shader_parameter/glow_intensity = 8.0
 shader_parameter/prepass_texture = SubResource("5")
 shader_parameter/blur_texture = SubResource("4")
+shader_parameter/glow_intensity = 8.0
 
 [node name="BlurGlowDemo" type="CanvasLayer"]
 script = ExtResource("1")

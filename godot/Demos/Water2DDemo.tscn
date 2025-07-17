@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://djjqjfs0768ni"]
 
-[ext_resource type="Script" path="res://Demos/Water2D/Water2D.gd" id="1"]
+[ext_resource type="Script" uid="uid://ffr1bhd6f5md" path="res://Demos/Water2D/Water2D.gd" id="1"]
 [ext_resource type="Material" path="res://Demos/Water2D/water_2D_material.tres" id="4"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="5"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="5"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
 
 [node name="Water2DDemo" type="CanvasLayer"]
 layer = 0

@@ -4,7 +4,7 @@
 [ext_resource type="Material" uid="uid://b728wkr1lafxb" path="res://Demos/UnlitDirectionalTint/UnlitDirectionalTint.tres" id="2"]
 [ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://dquhei2qv5csj" path="res://Shared/Demo3DEnvironment.tscn" id="4"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="5"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="5"]
 
 [sub_resource type="Animation" id="Animation_4peom"]
 length = 0.001
@@ -148,8 +148,8 @@ tracks/5/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hujme"]
 _data = {
-"RESET": SubResource("Animation_4peom"),
-"show": SubResource("1")
+&"RESET": SubResource("Animation_4peom"),
+&"show": SubResource("1")
 }
 
 [node name="UnlitDirectionalTintDemo" type="CanvasLayer"]

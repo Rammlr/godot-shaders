@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmg7vob2jhnek"]
 
 [ext_resource type="Texture2D" uid="uid://dieoxafgevoay" path="res://Main/gdquest_logo_white.svg" id="1_wf1i5"]
-[ext_resource type="Script" path="res://Main/GDQuestLogo.gd" id="2"]
+[ext_resource type="Script" uid="uid://dh5m86r1jj4nb" path="res://Main/GDQuestLogo.gd" id="2"]
 
 [node name="GDQuestLogo" type="TextureButton"]
 anchors_preset = 3

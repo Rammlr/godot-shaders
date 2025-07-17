@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=3 uid="uid://ca3nxv23e3o27"]
 
 [ext_resource type="ArrayMesh" uid="uid://bf02gogn681sv" path="res://Demos/ImpossibleCube/cube_full.obj" id="2"]
-[ext_resource type="Shader" path="res://Shaders/stencil_mask.gdshader" id="3"]
-[ext_resource type="Script" path="res://Demos/ImpossibleCube/Rotate.gd" id="5"]
+[ext_resource type="Shader" uid="uid://dfxst1dbjqmn2" path="res://Shaders/stencil_mask.gdshader" id="3"]
+[ext_resource type="Script" uid="uid://dhe4vtxxxvcex" path="res://Demos/ImpossibleCube/Rotate.gd" id="5"]
 [ext_resource type="ArrayMesh" uid="uid://c135huw5eyy5e" path="res://Demos/ImpossibleCube/cube_hollow.obj" id="6"]
 
 [sub_resource type="StandardMaterial3D" id="1"]
@@ -21,8 +21,8 @@ resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("3")
 shader_parameter/albedo = Color(0.0431373, 0.941176, 0.921569, 1)
-shader_parameter/stencil_color = Color(0, 1, 1, 1)
 shader_parameter/stencil = SubResource("3")
+shader_parameter/stencil_color = Color(0, 1, 1, 1)
 
 [sub_resource type="CylinderMesh" id="5"]
 
@@ -34,8 +34,8 @@ resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("3")
 shader_parameter/albedo = Color(0.956863, 0.376471, 0.0588235, 1)
-shader_parameter/stencil_color = Color(1, 0, 0, 1)
 shader_parameter/stencil = SubResource("6")
+shader_parameter/stencil_color = Color(1, 0, 0, 1)
 
 [sub_resource type="CapsuleMesh" id="8"]
 
@@ -47,8 +47,8 @@ resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("3")
 shader_parameter/albedo = Color(0.0470588, 0.168627, 0.945098, 1)
-shader_parameter/stencil_color = Color(0, 0, 1, 1)
 shader_parameter/stencil = SubResource("9")
+shader_parameter/stencil_color = Color(0, 0, 1, 1)
 
 [sub_resource type="BoxMesh" id="11"]
 
@@ -60,8 +60,8 @@ resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("3")
 shader_parameter/albedo = Color(0.0705882, 0.94902, 0.290196, 1)
-shader_parameter/stencil_color = Color(0, 1, 0, 1)
 shader_parameter/stencil = SubResource("12")
+shader_parameter/stencil_color = Color(0, 1, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="14"]
 shading_mode = 0

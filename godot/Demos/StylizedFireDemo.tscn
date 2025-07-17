@@ -4,20 +4,20 @@
 [ext_resource type="Texture2D" uid="uid://flldwuhtdvhp" path="res://Demos/StylizedFire/HoleNoise.png" id="3_tg5uj"]
 [ext_resource type="Texture2D" uid="uid://b8wh1wkibxdsi" path="res://Demos/StylizedFire/GreenFireGradient.tres" id="4"]
 [ext_resource type="Texture2D" uid="uid://bko6oayqcslrd" path="res://Demos/StylizedFire/FireMask.png" id="4_58wat"]
-[ext_resource type="Shader" path="res://Shaders/stylized_fire.gdshader" id="5"]
+[ext_resource type="Shader" uid="uid://bpr8qf4lkk5gb" path="res://Shaders/stylized_fire.gdshader" id="5"]
 [ext_resource type="PackedScene" uid="uid://n87x06o26w4p" path="res://Shared/Demo3DEnvironmentDark.tscn" id="6"]
 [ext_resource type="Texture2D" uid="uid://xl22pmkk0nsk" path="res://Demos/StylizedFire/BlueFireGradient.tres" id="7"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="8"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="8"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 render_priority = 0
 shader = ExtResource("5")
+shader_parameter/noise_texture = ExtResource("3_tg5uj")
+shader_parameter/texture_mask = ExtResource("4_58wat")
 shader_parameter/emission_intensity = 2.0
 shader_parameter/time_scale = 3.0
 shader_parameter/texture_scale = Vector2(1, 1)
 shader_parameter/edge_softness = 0.1
-shader_parameter/noise_texture = ExtResource("3_tg5uj")
-shader_parameter/texture_mask = ExtResource("4_58wat")
 
 [sub_resource type="Gradient" id="2"]
 colors = PackedColorArray(0.980957, 0.801817, 0, 1, 1, 0, 0.447059, 0)

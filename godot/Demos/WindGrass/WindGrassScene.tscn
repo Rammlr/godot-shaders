@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://03bjah3n70ep"]
 
-[ext_resource type="Script" path="res://Demos/WindGrass/GrassMesh.gd" id="1"]
-[ext_resource type="Shader" path="res://Demos/WindGrass/unshaded.gdshader" id="1_3yq07"]
+[ext_resource type="Script" uid="uid://c51fc2b3w0div" path="res://Demos/WindGrass/GrassMesh.gd" id="1"]
+[ext_resource type="Shader" uid="uid://cpv0tsf7wddwe" path="res://Demos/WindGrass/unshaded.gdshader" id="1_3yq07"]
 [ext_resource type="ArrayMesh" uid="uid://dkmbbutsksngn" path="res://Demos/WindGrass/grass_triangle.obj" id="2"]
 [ext_resource type="Material" uid="uid://b4lr8jmejpa8t" path="res://Demos/WindGrass/wind_grass.tres" id="3"]
 
@@ -23,6 +23,31 @@ buffer = PackedFloat32Array(0.628956, 0, -0.777441, 0.137753, 0, 1, 0, 0, 0.7774
 [sub_resource type="CylinderMesh" id="5"]
 top_radius = 1.0
 bottom_radius = 1.0
+
+[sub_resource type="Animation" id="Animation_w5rnr"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterRoot:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterRoot:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="Animation" id="6"]
 resource_name = "showcase"
@@ -51,35 +76,10 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.0333333, 2, 2.5, 3, 3.4, 5, 5.4, 5.7, 6, 6.5, 6.8, 7, 8)
 }
 
-[sub_resource type="Animation" id="Animation_w5rnr"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CharacterRoot:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("CharacterRoot:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-2, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_y4im6"]
 _data = {
-"RESET": SubResource("Animation_w5rnr"),
-"showcase": SubResource("6")
+&"RESET": SubResource("Animation_w5rnr"),
+&"showcase": SubResource("6")
 }
 
 [node name="WindGrass" type="Node3D"]

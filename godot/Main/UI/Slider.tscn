@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwtk52g0ufvjp"]
 
-[ext_resource type="Theme" path="res://Main/UI/ui_theme.tres" id="4"]
+[ext_resource type="Theme" uid="uid://b2rktjpfj58fv" path="res://Main/UI/ui_theme.tres" id="4"]
 
 [node name="Slider" type="HSlider"]
 anchor_left = 0.5

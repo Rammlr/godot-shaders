@@ -3,9 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://cyoqn2l7tvp62" path="res://Demos/Outline/Outline2D/OutlineOuter.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://dbmtm1ybyxbvk" path="res://Demos/Outline/Outline2D/OutlineBothDirections.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://c6cldif6wl6m5" path="res://Demos/Outline/Outline2D/OutlineInner.tscn" id="3"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="4"]
-[ext_resource type="PackedScene" path="res://Shared/Background2D/Demo2DBackground.tscn" id="9"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="10"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="4"]
+[ext_resource type="PackedScene" uid="uid://7mqdkojagyav" path="res://Shared/Background2D/Demo2DBackground.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="10"]
 
 [node name="Outline2DDemo" type="CanvasLayer"]
 script = ExtResource("4")

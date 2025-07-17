@@ -2,17 +2,19 @@
 
 [ext_resource type="PackedScene" uid="uid://g8f67e4t4v2u" path="res://Demos/Blur/Ship.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://xhacbxqwq2bs" path="res://Demos/Blur/SpaceBackground.tscn" id="2"]
-[ext_resource type="Script" path="res://Demos/Blur/BlurDirection.gd" id="3"]
-[ext_resource type="Shader" path="res://Shaders/gaussian_blur.gdshader" id="4"]
-[ext_resource type="Script" path="res://Utils/DebugViewer.gd" id="5"]
-[ext_resource type="PackedScene" path="res://Shared/DemoInterface.tscn" id="6"]
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
+[ext_resource type="Script" uid="uid://iaecpgwt7s66" path="res://Demos/Blur/BlurDirection.gd" id="3"]
+[ext_resource type="Shader" uid="uid://b5fnl035dhghc" path="res://Shaders/gaussian_blur.gdshader" id="4"]
+[ext_resource type="Script" uid="uid://b2qw1w46ra52a" path="res://Utils/DebugViewer.gd" id="5"]
+[ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="6"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="7"]
 
 [sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("4")
+shader_parameter/blur_scale = Vector2(1, 0)
 
 [sub_resource type="ShaderMaterial" id="2"]
 shader = ExtResource("4")
+shader_parameter/blur_scale = Vector2(1, 0)
 
 [sub_resource type="Shader" id="3"]
 code = "shader_type canvas_item;

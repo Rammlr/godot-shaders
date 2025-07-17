@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://b4ei1ofy0tfkm"]
 
-[ext_resource type="Script" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
-[ext_resource type="Shader" path="res://Shaders/shockwave.gdshader" id="2"]
-[ext_resource type="Script" path="res://Demos/Shockwave/Shockwave.gd" id="3"]
+[ext_resource type="Script" uid="uid://df61ac3yrm6x1" path="res://addons/ShaderSecretsHelper/DemoScreen.gd" id="1"]
+[ext_resource type="Shader" uid="uid://7t6n54hc5fy4" path="res://Shaders/shockwave.gdshader" id="2"]
+[ext_resource type="Script" uid="uid://bg7w0ut4ikmy0" path="res://Demos/Shockwave/Shockwave.gd" id="3"]
 [ext_resource type="PackedScene" uid="uid://ceift4rkkbwgh" path="res://Demos/Shockwave/ShockwaveScene.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://diofpwcvq5elu" path="res://Shared/DemoInterface.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://dquhei2qv5csj" path="res://Shared/Demo3DEnvironment.tscn" id="6"]
@@ -13,8 +13,8 @@ viewport_path = NodePath("Mask/SubViewport")
 [sub_resource type="ShaderMaterial" id="1"]
 resource_local_to_scene = true
 shader = ExtResource("2")
-shader_parameter/displacement_amount = 0.5
 shader_parameter/mask_texture = SubResource("5")
+shader_parameter/displacement_amount = 0.5
 
 [sub_resource type="Shader" id="2"]
 code = "shader_type canvas_item;
